@@ -1,5 +1,9 @@
-<div class="max-w-prose px-2 mx-auto grow">
-  <h2>Sobre Mí</h2>
+---
+import ProseCenter from '../layouts/ProseCenter.astro';
+---
+
+<ProseCenter title={'Sobre Mí'}>
+  <!-- I want to extract these sentances from elsewhere and loop -->
   <p>
     Actualmente se desempeña como Psicoanalista y supervisor, en su consulta
     privada. En conjunto con su labor como docente de la Clínica Psicológica de
@@ -20,20 +24,4 @@
     Posee publicaciones en Revistas indexadas y libros en torno al
     psicoanálisis.
   </p>
-</div>
-<style>
-  p {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    line-height: calc(var(--size-step-0) + 0.2em);
-    font-size: var(--size-step-0);
-    padding-top: var(--space-m);
-  }
-  h2 {
-    font-family: 'Lora', serif;
-    font-weight: 600;
-    line-height: calc(var(--size-step-0) + 0.2em);
-    font-size: var(--size-step-3);
-    padding-top: var(--space-m);
-  }
-</style>
+</ProseCenter>

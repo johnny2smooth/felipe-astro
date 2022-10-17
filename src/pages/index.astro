@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@fontsource/lora';
-import snail from '../../public/snail.svg';
+import snail from '/snail.svg';
+import About from '../components/About.astro';
 ---
 
 <Layout title="Felipe Matamala">
@@ -10,10 +11,10 @@ import snail from '../../public/snail.svg';
   </header>
   <main>
     <img src={snail} alt="snail" class="animate-spin-slow" />
-    <p>
-      Welcome to Felipe's site. I can just rip all the assets off of his old
-      site,
-    </p>
+    <div class="flex flex-wrap content-center justify-items-center">
+      <About />
+      <About />
+    </div>
   </main>
 </Layout>
 
@@ -22,7 +23,6 @@ import snail from '../../public/snail.svg';
     margin: 1em auto;
     padding-left: var(--space-m);
     padding-right: var(--space-m);
-    max-width: 60ch;
   }
   h1 {
     font-size: var(--size-step-5);
@@ -31,12 +31,7 @@ import snail from '../../public/snail.svg';
     text-align: center;
     margin: 0;
   }
-  p {
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    line-height: calc(var(--size-step-1) + 0.1em);
-    font-size: var(--size-step-1);
-  }
+
   .text-gradient {
     background-image: var(--cool-to-warm-spectrum);
     -webkit-background-clip: text;

@@ -1,13 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@fontsource/lora';
+import snail from '../../public/snail.svg';
 ---
 
-<Layout title="Welcome to Felipe's site">
+<Layout title="Felipe Matamala">
   <header>
     <h1>Felipe Matamala</h1>
   </header>
   <main>
+    <img src={snail} alt="snail" class="animate-spin-slow" />
     <p>
       Welcome to Felipe's site. I can just rip all the assets off of his old
       site,

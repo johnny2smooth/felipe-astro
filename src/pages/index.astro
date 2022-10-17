@@ -1,28 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import '@fontsource/lora';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to Felipe's site">
   <header>
-    <h1 class="text-9xl text-center">Felipe Matamala</h1>
+    <h1>Felipe Matamala</h1>
   </header>
-  <main></main>
+  <main>
+    <p>
+      Welcome to Felipe's site. I can just rip all the assets off of his old
+      site,
+    </p>
+  </main>
 </Layout>
 
 <style>
   main {
-    margin: auto;
-    padding: 1.5rem;
+    margin: 1em auto;
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
     max-width: 60ch;
   }
   h1 {
-    font-size: 3rem;
+    font-size: var(--size-step-5);
+    line-height: calc(var(--size-step-4) + 0.1em);
     font-weight: 800;
+    text-align: center;
     margin: 0;
   }
+  p {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    line-height: calc(var(--size-step-1) + 0.1em);
+    font-size: var(--size-step-1);
+  }
   .text-gradient {
-    background-image: var(--luminous-dusk);
+    background-image: var(--cool-to-warm-spectrum);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;

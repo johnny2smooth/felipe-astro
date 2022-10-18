@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import '@fontsource/lora';
 import snail from '/snail.svg';
 import About from '../components/About.astro';
+import Curriculum from '../components/Curriculum.astro';
+import Articles from '../components/Articles.astro';
 ---
 
 <Layout title="Felipe Matamala">
@@ -11,9 +13,10 @@ import About from '../components/About.astro';
   </header>
   <main>
     <img src={snail} alt="snail" class="animate-spin-slow" />
-    <div class="flex flex-wrap content-center justify-items-center">
+    <div class="flex flex-wrap content-center justify-items-center gap-4">
       <About />
-      <About />
+      <Curriculum />
+      <Articles />
     </div>
   </main>
 </Layout>

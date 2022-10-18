@@ -1,0 +1,36 @@
+---
+import Card from './Card.astro';
+---
+
+<div class="stack">
+  <h2>Articulos</h2>
+  <div class="grid grid-cols- md:grid-cols-2 gap-4">
+    <!-- {#each cards as card}
+        <Card {...card} />
+      {/each} -->
+    <Card
+      title="Mi pareja fue abusada en su infancia, ¿cómo lo ayudo?"
+      body="La Tercera"
+      href="https://www.latercera.com/paula/noticia/mi-pareja-fue-abusada-en-su-infancia-como-lo-ayudo/HZWSGBW43ZDVTBPLFERW3JGBHM/"
+      src="https://www.latercera.com/resizer/ivq7HNSBttqdG3d9dH9zk3zmErw=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/L3MNXH4WPBEOVGAUENK46NIWN4.jpg"
+    />
+    <Card
+      title="El dolor es inevitable, el sufrimiento opcional"
+      body="La Tercera"
+      href="https://www.latercera.com/paula/noticia/el-dolor-es-inevitable-el-sufrimiento-opcional/6SROALEBJBD7LHXRRZBQDPF6YI/"
+      src="https://www.latercera.com/resizer/fCbLeiPDyPMelMOfqhwz_xKA3Uk=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/5UZB6XBY4RENVH4SZA3VAXRNI4.jpg"
+    />
+    <Card
+      title="Vivir con miedo a la muerte"
+      body="La Tercera"
+      href="https://www.latercera.com/paula/noticia/vivir-con-miedo-a-la-muerte/KOSZ2VPZ4RHB3EHQPRR2VY3T3U/"
+      src="https://www.latercera.com/resizer/paewWR0OUxKFr6wFaWbki7AFHmU=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/AS53ENLU3BGHFHF55JUKP7PESE.jpg"
+    />
+    <Card
+      title="Trauma infantil en la adultez: ¿Cómo detectarlo?"
+      body="La Tercera"
+      href="https://www.latercera.com/paula/noticia/trauma-infantil-en-la-adultez-como-detectarlo/LPAYS2Y5YZCBFI7XWHKLRL3VIM/"
+      src="https://www.latercera.com/resizer/Zp_xQuUXQtV9dpX82Le5zK1ty4g=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/P6IUT2XDOBDCLK54SKLWPECRTA.jpg"
+    />
+  </div>
+</div>

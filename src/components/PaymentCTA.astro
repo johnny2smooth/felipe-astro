@@ -1,0 +1,36 @@
+---
+import hexagon from '/hexagon.svg';
+---
+
+<header class="l-Header">
+  <a class="cta">
+    <img src={hexagon} alt="buy me coffee" />
+    <p>Payments</p>
+  </a>
+</header>
+<style>
+  .l-Header {
+    position: relative;
+    z-index: 999;
+  }
+
+  .cta {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--size-step-0);
+    padding-right: var(--size-step-0);
+  }
+
+  .l-Header .cta p {
+    position: absolute;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: color 0.25s ease;
+    font-size: calc(0.00357 * 100vw + 12.85714px);
+    line-height: 1;
+  }
+</style>

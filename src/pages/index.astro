@@ -1,9 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@fontsource/lora';
-import snail from '/snail.svg';
-import flower from '/flower.svg';
-import sunshine from '/sunshine.svg';
+import SVGLanding from '../components/SVGLanding.astro';
 import About from '../components/About.astro';
 import Curriculum from '../components/Curriculum.astro';
 import Articles from '../components/Articles.astro';
@@ -14,13 +12,7 @@ import PaymentCTA from '../components/PaymentCTA.astro';
   <PaymentCTA />
   <h1>Felipe Matamala</h1>
   <main>
-    <div class="flex">
-      <img src={sunshine} alt="snail" class="animate-spin-slow max-w-[50%]" />
-    </div>
-    <div class="flex justify-between items-end">
-      <img src={snail} alt="snail" class="rotate-12 max-w-[35%]" />
-      <img src={flower} alt="flower" class="max-w-[75%]" />
-    </div>
+    <SVGLanding />
     <div class="flex flex-wrap content-center justify-items-center gap-4">
       <About />
       <Curriculum />

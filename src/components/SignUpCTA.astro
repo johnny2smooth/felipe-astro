@@ -1,0 +1,60 @@
+---
+export interface Props {
+  message: string;
+}
+
+const { message } = Astro.props;
+
+let splitMessage = message.split('');
+let sineStart = 0;
+---
+
+<div class="sine flex">
+  <a>
+    {
+      splitMessage.map((letter, index) => (
+        <span
+          style={`animation: 1.8s ease-in-out ${
+            index / 4 + 0.05
+          }s infinite normal both running sine;`}
+        >
+          {letter}
+        </span>
+      ))
+    }
+  </a>
+</div>
+<style>
+  .sine {
+    position: relative;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .sine a {
+    font-family: 'Century-Mono', monospace;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: calc(0.0131 * 100vw + 17.80952px);
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .sine a span {
+    display: inline-block;
+  }
+
+  @keyframes sine {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>
